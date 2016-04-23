@@ -1,49 +1,47 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru">  
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+      <meta charset="utf-8">
+      <title>HTML Academy: Седона</title>
   </head>
   <body>
-      <header class="main-header">
-          <div class="container">
-              <nav class="main-navigation">
-                  <ul>
-                      <li>
-                          <a href="#">Информация</a>
-                      </li>
-                      <li>
-                          <a href="#">Фото и видео</a>
-                      </li>
-                      <li>
-                          <a href="#">Фото и видео</a>
-                      </li>
-                      <li class="logo">
-                          <img src="img/" width="50" height="50" alt="Sedona logo">
-                      </li>
-                      <li>
-                          <a href="#">Карта штата</a>
-                      </li>
-                      <li>
-                          <a href="#">Гостиницы</a>
-                      </li>
-                  </ul>
-              </nav>
-          </div>
-      </header>
-      <main class="container">
-          <div class="background-photo">
-              <img src="img/" width="1200" height="490" alt="Sedona">
-          </div> 
-          <div class="title-info">
-              <p class="slogan">
-                  <b>Седона — небольшой городок в Аризоне, 
+      <div class="container">
+        <header class="main-header">
+            <nav class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Фото и видео</a>
+                    </li>
+                    <li class="logo">
+                        <img src="img/" width="50" height="50" alt="Sedona logo">
+                    </li>
+                    <li>
+                        <a href="#">Карта штата</a>
+                    </li>
+                    <li>
+                        <a href="#">Гостиницы</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="content">
+            <div class="background-photo">
+                <img src="img/" width="1200" height="490" alt="Sedona">
+            </div> 
+            <div class="title-info">
+                <p class="slogan">
+                    <b>Седона — небольшой городок в Аризоне, 
                       заслуживающий большего!
-                  </b>
-              </p>
-              <p class="title-features">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-          </div>
-          <div class="features">
+                    </b>
+                </p>
+                <p class="title-features">
+                    Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+                </p>
+            </div>
+            <div class="features">
               <div class="feature-one">
                   <div class="feature-description">
                       <h2> Настоящий<br> 
@@ -133,12 +131,12 @@
                   <form action="https://echo.htmlacademy.ru" method="post" hidden>
                       <div class="form-item">
                           <label for="date-arrival">Дата заезда:</label>
-                          <input type="date" id="date-arrival" name="arrival" placeholder="24 апреля 2016">
+                          <input type="date" id="date-arrival" name="arrival" value="2016-04-24">
                           <div class="icon-calendar"></div>
                       </div>
                       <div class="form-item">
                           <label for="date-check-out">Дата выезда:</label>
-                          <input type="date" id="date-check-out" name="check-out" placeholder="4 июля 2016">
+                          <input type="date" id="date-check-out" name="check-out" value="2016-07-04">
                           <div class="icon-calendar"></div>
                       </div>
                       <div class="form-item">
@@ -161,22 +159,21 @@
           </div>
       </main>
       <footer class="main-footer">
-          <div class="container">
-              <section class="hash-tag">
-                <p>#visitsedona</p>
-              </section>
-              <section class="footer-social">
-                  <a class="social-btn social-btn-twitter" href="#">Tw</a>
-                  <a class="social-btn social-btn-facebook" href="#">Fb</a> 
-                  <a class="social-btn social-btn-youtube" href="#">Yt</a>
-              </section>
-              <section class="footer-copyright">
-                  <p>Website by:</p>
-                  <a class="btn" href="https://htmlacademy.ru">
-                      <img src="#" width="120" height="50" alt="htmlacademy-logo">
-                  </a>
-              </section>
-          </div>
+          <section class="hash-tag">
+            <p>#visitsedona</p>
+          </section>
+          <section class="footer-social">
+              <a class="social-btn social-btn-twitter" href="#">Tw</a>
+              <a class="social-btn social-btn-facebook" href="#">Fb</a> 
+              <a class="social-btn social-btn-youtube" href="#">Yt</a>
+          </section>
+          <section class="footer-copyright">
+              <p>Website by:</p>
+              <a class="btn" href="https://htmlacademy.ru">
+                  <img src="#" width="120" height="50" alt="htmlacademy-logo">
+              </a>
+          </section>
       </footer>
+    </div>
   </body>
 </html>
