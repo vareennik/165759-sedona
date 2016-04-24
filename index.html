@@ -16,7 +16,7 @@
                         <a href="#">Фото и видео</a>
                     </li>
                     <li class="logo">
-                        <img src="img/" width="50" height="50" alt="Sedona logo">
+                        <a href="#"><img src="img/" width="50" height="50" alt="Sedona logo"></a>
                     </li>
                     <li>
                         <a href="#">Карта штата</a>
@@ -131,25 +131,25 @@
                   <form action="https://echo.htmlacademy.ru" method="post" hidden>
                       <div class="form-item">
                           <label for="date-arrival">Дата заезда:</label>
-                          <input type="date" id="date-arrival" name="arrival" value="2016-04-24">
+                          <input type="text" id="date-arrival" name="arrival" placeholder="24 апреля 2016">
                           <div class="icon-calendar"></div>
                       </div>
                       <div class="form-item">
                           <label for="date-check-out">Дата выезда:</label>
-                          <input type="date" id="date-check-out" name="check-out" value="2016-07-04">
+                          <input type="text" id="date-check-out" name="check-out" placeholder="4 июля 2016">
                           <div class="icon-calendar"></div>
                       </div>
                       <div class="form-item">
                           <label for="adults-number">Взрослые:</label>
-                          <button class="minus">-</button>
+                          <button type="button" class="minus">-</button>
                           <input type="number" id="adults-number" name="adults" placeholder="2">
-                          <button class="plus">+</button>
+                          <button type="button" class="plus">+</button>
                       </div>
                       <div class="form-item">
                           <label for="children-number">Дети:</label>
-                          <button class="minus">-</button>
+                          <button type="button" class="minus">-</button>
                           <input type="number" id="children-number" name="children" placeholder="0">
-                          <button class="plus">+</button>
+                          <button type="button" class="plus">+</button>
                       </div>  
                       <button class="btn-search" >Найти</button>
                   </form>      
