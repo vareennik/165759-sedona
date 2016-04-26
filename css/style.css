@@ -1,4 +1,5 @@
 body {
+    text-transform: uppercase;
     font-family: "PTSans Regular", "Myriad Pro", sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -9,17 +10,9 @@ body {
 h2 {
     font-family: "PTSans Bold", "Myriad Pro", sans-serif;
     font-size: 21px;
-    line-height: 21px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.other-features h2, .result-accomodation h2 {
-    color: #000000;
-}
-
-.result-accomodation h2 {
     line-height: 26px;
+    font-weight: bold;
+    color: #000000;
 }
 
 h3 {
@@ -29,8 +22,6 @@ h3 {
     color: #ffffff;
     font-weight: bold;
 }
-
-
 
 h4 {
     font-size: 12px;
