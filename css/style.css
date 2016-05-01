@@ -28,3 +28,279 @@ h4 {
     line-height: 18px;
     color: #000000; 
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: darkturquoise;
+}
+
+/* Стили для хедера*/
+header {
+    background-color: rgba(0, 120, 201, 0.7); 
+}
+
+main {
+    background-color: rgba(12, 130, 50, 0.8); 
+}
+
+.main-navigation {
+    width: 1056px;
+    margin: 0 72px;
+    background-color: beige;
+    min-height: 56px;
+    text-align: center;
+}
+
+.main-navigation li {
+    display: inline-block;
+    width: 128px;
+}
+
+/* Стили для основной части*/
+
+/* index */
+.background-photo {
+    margin-bottom: 56px;
+}
+
+.title-info {
+    background-color: azure;
+    width: 576px;
+    min-height: 108px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+    box-sizing: border-box;
+}
+
+p.slogan {
+    margin-bottom: 37px;
+}
+
+.row {
+    min-height: 256px;
+    width: 1200px;
+}
+
+.row:nth-child(2) {
+    min-height: 331px;
+}
+
+.col-1 {
+    width: 400px;
+    float: left; 
+    background-color:bisque;
+    min-height: 256px;
+}
+
+.row:nth-child(2) .col-1 {
+    min-height: 331px;
+}
+
+.row:nth-child(3) .col-1 {
+    clear:right;
+}
+
+.booking {
+    min-height: 290px;
+    background-color: aquamarine;
+}
+
+.booking-container {
+    width: 576px;
+    margin: 0 auto;
+    min-height: 100px;
+    padding-top: 55px;
+}
+
+.booking-title {
+    min-height: 28px;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.booking-tip {
+    min-height: 37px;
+    text-align: center;
+}
+
+.booking a {
+    display: block;
+    width: 567px;
+    height: 86px;
+    color: #ffffff;
+    background-color: #766357;
+    margin-top: 52px;
+}
+
+.booking form {
+    width: 567px;
+    margin-top: 0px;
+    height: 396px;
+    padding: 55px 53px;
+}
+
+.map {
+    width: 1200px;
+    min-height: 474px;
+}
+
+
+/* sedona-hotels */
+
+.filter {
+    min-height: 217px;
+    padding: 30px 72px;
+}
+
+.filter .infrastructure {
+    float: left;
+    width: 240px;
+    min-height: 155px;
+}
+
+.filter .accomodation-type {
+    float: left;
+    width: 288px;
+    padding-left: 14px;
+    min-height: 155px;
+}
+
+.filter .price {
+    float: right;
+    width: 327px;
+}
+
+.result-header {
+    min-height: 86px;
+    padding: 30px 72px;
+    background-color: bisque;
+}
+
+.result-header span {
+    display: block;
+    float: left;
+    width: 117px;
+    min-height: 25px;
+    margin-right: 46px;
+    background-color: aquamarine;
+}
+
+.sorting li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.result-header h4 {
+    display: block;
+    float: left;
+    min-height: 13px;
+    margin-right: 36px;
+    background-color: darkkhaki;
+}
+
+.sorting-direction {
+    float: right;
+    background-color: fuchsia;
+    height: 12px;
+    width: 37px;
+}
+
+.sorting-direction a {
+    display: block;
+    float: left;
+    width: 11px;
+    width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+}
+
+.arrow-up {
+    margin-right: 12px;
+	border-bottom: 10px solid white;
+}
+
+.arrow-down {
+    border-top: 10px solid white;
+}
+    
+.result-row {
+    height: 151px;
+    padding: 30px 72px;
+    background-color: darkturquoise;
+}
+
+.accomodation-photo {
+    float: left;
+    width: 135px;
+    margin-right: 30px;
+}
+
+.accomodation-info {
+    width: 275px;
+    min-height: 90px;
+    float: left;
+    background-color: azure;
+}
+
+.raiting-block {
+    float: right;
+    min-height: 90px;
+    background-color: azure;
+}
+
+/* Звезды */
+.star {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-color: firebrick;
+}
+
+/* Стили для подвала */
+
+footer {
+    background-color: floralwhite;
+    padding: 35px 72px;
+}
+
+.hash-tag {
+    float: left;
+    background-color: aquamarine;
+    width: 240px;
+    min-height: 20px;
+    margin-right: 130px;
+}
+
+.footer-social {
+    float: left;
+    background-color: aquamarine;
+    width: 316px;
+    min-height: 48px;
+}
+
+.footer-copyright {
+    float: right;
+    width: 240px;
+    min-height: 41px;
+    background-color: aquamarine;
+}
+
+.footer-copyright p {
+    float: left;
+    margin-right: 7px;
+}
