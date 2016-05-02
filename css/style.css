@@ -99,6 +99,10 @@ p.slogan {
     min-height: 331px;
 }
 
+.row:nth-child(3) .col-2 {
+    float: left;
+}
+
 .col-1 {
     width: 400px;
     float: left; 
@@ -110,9 +114,6 @@ p.slogan {
     min-height: 331px;
 }
 
-.row:nth-child(3) .col-1 {
-    clear:right;
-}
 
 .booking {
     min-height: 290px;
