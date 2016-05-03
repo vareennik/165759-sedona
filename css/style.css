@@ -102,18 +102,31 @@ h4 {
     width: 129px;
 }
 
+.main-navigation a:hover {
+    color: #81b3d2;
+}
+
 .logo a {
     width: 139px;
     padding-top: 0;
     padding-bottom: 0;
+    
+    z-index: 10;
+    position: relative;
+}
+
+.current-page a {
+    color: #766357;
+}
+
+.current-page a:hover {
+    color: #604e43;
 }
 
 /* Стили для основной части*/
 
 /* index */
-.background-photo 
-    padding: 0;
-}
+
 
 .background-photo img {
     width: 1200px;
@@ -328,12 +341,32 @@ b.souvenirs::before {
 .filter {
     min-height: 217px;
     padding: 30px 72px;
+    background-color: aqua;
 }
 
 .filter .infrastructure {
     float: left;
-    width: 240px;
+    width: 165px;
     min-height: 155px;
+    margin-right: 75px;
+}
+
+.filter ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.filter li{
+    margin-bottom: 23px;
+}
+
+.filter h3 {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+    
+    margin-bottom: 28px;    
 }
 
 .filter .accomodation-type {
@@ -405,7 +438,28 @@ b.souvenirs::before {
 .result-row {
     height: 151px;
     padding: 30px 72px;
-    background-color: darkturquoise;
+    background-color: #fefefe;
+    
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.result-row:first-child {
+    border-top: 1px solid #f9f9f9;
+}
+
+.accomodation-title a {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    
+    color: #000000;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.accomodation-title a:hover {
+    color: #81b3d2;
 }
 
 .accomodation-photo {
@@ -418,13 +472,64 @@ b.souvenirs::before {
     width: 275px;
     min-height: 90px;
     float: left;
-    background-color: azure;
+    background-color: fuchsia;
+    padding: 0;
+}
+
+.btn {
+    color: #ffffff;
+    
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    
+    text-decoration: none;
+    
+    padding: 6px 13px;
+}
+
+.btn-info {
+    background-color: #81b3d2;
+    margin-right: 6px;
+}
+
+.btn-info:hover {
+    background-color: #669ec0; 
+} 
+
+.btn-booking {
+    background-color: #766357;
+}
+
+.btn-booking:hover {
+    background-color: #604e43;
+}
+
+.info-type {
+    display: block;
+    float: left;
+    width: 108px;
+    
+    margin-right: 6px;
+}
+
+.type-price {
+    margin-bottom: 10px;
+    margin-top: 8px;
+    padding: 0;
 }
 
 .raiting-block {
     float: right;
-    min-height: 90px;
-    background-color: azure;
+    max-height: 90px;
+    background-color: fuchsia;
+}
+
+.raiting {
+    background-color: #f2f2f2;
+    
+    padding: 5px 16px;
+    margin-top: 37px;
 }
 
 /* Звезды */
