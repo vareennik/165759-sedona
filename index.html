@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">  
   <head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
+      <link rel="stylesheet" href="css/normalize.css">  
       <link rel="stylesheet" href="css/style.css">  
       <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
   </head>
   <body>
       <div class="container">
-        <header class="main-header">
+        <header class="main-header clearfix">
             <nav class="main-navigation">
                 <ul>
                     <li>
@@ -30,7 +32,7 @@
         </header>
         <main>
             <div class="background-photo">
-                <img src="img/index_background.jpg" width="1200" height="536" alt="Welcome to the gergeous Sedona">
+                <img src="img/index_background.jpg" width="1200" height="507" alt="Welcome to the gergeous Sedona">
             </div> 
             <div class="title-info">
                 <p class="slogan">
@@ -43,8 +45,8 @@
                 </p>
             </div>
             <div class="features-block">
-              <div class="feature">
-                  <div class="feature-description">
+              <div class="feature row clearfix">
+                  <div class="feature-description col-1 bg-blue color-white">
                       <span class="feature-title"> Настоящий<br> 
                            городок
                       </span>
@@ -53,35 +55,35 @@
                           Седона - не аттракцион для туристов, там течет своя жизнь
                       </p>
                   </div>
-                  <div class="feature-img">
+                  <div class="feature-img col-2">
                       <img src="img/argument_1.jpg" width="800" height="256" alt="View of the city of Sedona">
                   </div>
               </div>
-              <div class="arguments-block">
-                  <div class="argument">
+              <div class="arguments-block row bg-white clearfix">
+                  <div class="argument col-1">
                       <b class="accomodation">Жилье</b>
                       <p> 
                         Рекомендуем пожить в настоящем мотеле, все как в кино!
                       </p>
                   </div>
-                  <div class="argument">
+                  <div class="argument col-1">
                       <b class="food">Еда</b>
                       <p> 
                         Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
                       </p>
                   </div>
-                  <div class="argument">
+                  <div class="argument col-1">
                       <b class="souvenirs">Сувениры</b>
                       <p> 
                         Не только китайского, но и местного производства!
                       </p>
                   </div>
               </div>
-              <div class="feature">
-                  <div class="feature-img">
+              <div class="feature row clearfix">
+                  <div class="feature-img col-2">
                       <img src="img/argument_2.jpg" width="800" height="256" alt="View of the nature of Sedona">
                   </div>
-                  <div class="feature-description">
+                  <div class="feature-description col-1 bg-blue color-white">
                       <span class="feature-title"> Там есть<br> 
                            мост дьявола
                       </span>
@@ -90,9 +92,10 @@
                           Да, по нему можно пройти! Если конечно вы осмелитесь
                       </p>
                   </div>
+                  
               </div>
-              <div class="other-features">
-                  <div class="feature-description">
+              <div class="other-features row bg-beige clearfix">
+                  <div class="feature-description col-1">
                       <span class="feature-title"> Небольшая<br> 
                            площадь
                       </span>
@@ -101,7 +104,7 @@
                           Все достопримечательности находятся очень близко
                       </p>
                   </div>
-                  <div class="feature-description">
+                  <div class="feature-description col-1">
                       <span class="feature-title"> Красивая<br> 
                            дорога
                       </span>
@@ -110,7 +113,7 @@
                           Ехать в Седону из Лас-Вегаса совсем не скучно!
                       </p>
                   </div>
-                  <div class="feature-description">
+                  <div class="feature-description col-1">
                       <span class="feature-title"> Мало<br> 
                            туристов
                       </span>
@@ -123,8 +126,8 @@
           </div>
           <div class="booking">
               <div class="booking-container">
-                  <p>Заинтересовались?</p>
-                  <p>
+                  <p class="booking-title">Заинтересовались?</p>
+                  <p class="booking-tip">
                     Укажите предполагаемые даты поездки,<br> 
                     и мы покажем вам лучшие предложения гостиниц в седоне
                   </p>
@@ -159,7 +162,7 @@
           <div class="map">
           </div>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer clearfix">
           <section class="hash-tag">
             <p>#visitsedona</p>
           </section>
@@ -168,9 +171,9 @@
               <a class="social-btn social-btn-facebook" href="#">Fb</a> 
               <a class="social-btn social-btn-youtube" href="#">Yt</a>
           </section>
-          <section class="footer-copyright">
-              <p>Website by:</p>
-              <a class="btn" href="https://htmlacademy.ru">
+          <section class="footer-copyright clearfix">
+              <p>Website by</p>
+              <a class="btn-site" href="https://htmlacademy.ru">
                   <img src="img/htmlacademy_logo.png" width="113" height="39" alt=" The Htmlacademy logotype">
               </a>
           </section>

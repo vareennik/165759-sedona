@@ -1,10 +1,14 @@
 body {
     text-transform: uppercase;
-    font-family: "PTSans Regular", "Myriad Pro", sans-serif;
+    font-family: "PT Sans", "Myriad Pro", sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: #333333;
     font-weight: normal;
+    
+    min-width: 1200px;
+    
+    background-color: #f2f2f2;
 }
 
 h2 {
@@ -27,4 +31,575 @@ h4 {
     font-size: 12px;
     line-height: 18px;
     color: #000000; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 5px #dbdbdb;
+}
+
+/* Стили для хедера*/
+.main-header {
+    background-color: #ffffff;
+    
+    color: #000000;
+}
+
+.main-navigation {
+    width: 1056px;
+    height: 56px;
+    
+    margin: 0 72px;
+    
+    background-color: red;
+    
+    float: left;
+    text-align: center;
+}
+
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    font-size: 0;
+} 
+
+.main-navigation li {
+    display: inline-block;
+    
+    vertical-align: top;
+    margin: 0;
+    
+}
+
+.main-navigation a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 129px;
+}
+
+.main-navigation a:hover {
+    color: #81b3d2;
+}
+
+.logo a {
+    width: 139px;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+    z-index: 10;
+    position: relative;
+}
+
+.current-page a {
+    color: #766357;
+}
+
+.current-page a:hover {
+    color: #604e43;
+}
+
+/* Стили для основной части*/
+
+/* index */
+
+
+.background-photo img {
+    width: 1200px;
+    height: 507px;
+}
+
+.title-info {
+    padding-top: 55px;
+    text-align: center;
+    
+    width: 576px;
+    min-height: 108px;
+    margin: 0 auto;
+    margin-bottom: 53px;
+    box-sizing: border-box;
+}
+
+p.slogan {
+    width: 457px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold; 
+}
+
+.title-info .title-features {
+    font-size: 14px;
+    line-height: 26px;
+    
+    width: 498px;
+    margin: 0 auto;
+}
+
+
+.row {
+    height: 256px;
+    width: 1200px;
+}
+
+.row:nth-child(2) {
+    height: 331px;
+}
+
+.col-2 {
+    height: 256px;
+}
+
+.row:nth-child(3) .col-2 {
+    float: left;
+}
+
+.col-1 {
+    width: 400px;
+    float: left;
+    height: 256px;
+    text-align: center;
+    padding: 55px 50px;
+}
+
+.row:nth-child(2) .col-1 {
+    min-height: 331px;
+}
+
+.features-block img {
+    width: 800px;
+    height: 256px;
+}
+
+.feature-title {
+    display: block;
+    margin-bottom: 26px;
+    
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.feature-description p {
+    margin-top: 29px;
+}
+
+.bg-blue {
+    background-color: #81b3d2;
+    color: #ffffff;
+}
+
+.row.bg-white {
+    background-color: #ffffff;
+}
+
+.row.bg-beige {
+    background-color: #eeeeee;
+}
+
+.arguments-block b {
+    display: block;
+    position: relative;
+    
+    padding-top: 164px;
+}
+
+.arguments-block b::before {
+    content: "";
+    position: absolute;
+    
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    top: 60px;
+    left: 50%;
+    
+    background: transparent url("../img/spritesheet.png") no-repeat;
+}
+
+b.accomodation::before {
+    width: 75px;
+    height: 72px;
+    margin-left: -36px;
+    
+    background-position: -89px -5px;
+}
+
+b.food::before {
+    width: 74px;
+    height: 70px;
+    margin-left: -37px;
+    
+    background-position: -5px -5px;
+}
+
+b.souvenirs::before {
+    width: 64px;
+    height: 76px;
+    margin-left: -32px;
+    
+    background-position: -5px -87px;
+}
+
+.argument p{
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 27px;
+    
+    width: 300px;
+}
+
+.argument {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.booking {
+    min-height: 290px;
+}
+
+.booking-container {
+    width: 576px;
+    margin: 0 auto;
+    min-height: 100px;
+    padding-top: 53px;
+    text-align: center;
+}
+
+.booking-title {
+    min-height: 28px;
+    margin-bottom: 29px;
+    
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.booking-tip {
+    min-height: 37px;
+    margin-bottom: 45px;
+}
+
+.booking a {
+    display: block;
+    width: 100%;
+    background-color: #766357;
+    
+    padding-top: 41px;
+    padding-bottom: 41px;
+        
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.booking form {
+    width: 567px;
+    margin-top: 0px;
+    height: 396px;
+    padding: 55px 53px;
+}
+
+.map {
+    width: 1200px;
+    min-height: 474px;
+}
+
+
+/* sedona-hotels */
+
+.filter {
+    min-height: 217px;
+    padding: 30px 72px;
+    background-color: aqua;
+}
+
+.filter .infrastructure {
+    float: left;
+    width: 165px;
+    min-height: 155px;
+    margin-right: 75px;
+}
+
+.filter ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.filter li{
+    margin-bottom: 23px;
+}
+
+.filter h3 {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+    
+    margin-bottom: 28px;    
+}
+
+.filter .accomodation-type {
+    float: left;
+    width: 288px;
+    padding-left: 14px;
+    min-height: 155px;
+}
+
+.filter .price {
+    float: right;
+    width: 327px;
+}
+
+.result-header {
+    min-height: 86px;
+    padding: 30px 72px;
+    background-color: bisque;
+}
+
+.result-header span {
+    display: block;
+    float: left;
+    width: 117px;
+    min-height: 25px;
+    margin-right: 46px;
+    background-color: aquamarine;
+}
+
+.sorting li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.result-header h4 {
+    display: block;
+    float: left;
+    min-height: 13px;
+    margin-right: 36px;
+    background-color: darkkhaki;
+}
+
+.sorting-direction {
+    float: right;
+    background-color: fuchsia;
+    height: 12px;
+    width: 37px;
+}
+
+.sorting-direction a {
+    display: block;
+    float: left;
+    width: 11px;
+    width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+}
+
+.arrow-up {
+    margin-right: 12px;
+	border-bottom: 10px solid white;
+}
+
+.arrow-down {
+    border-top: 10px solid white;
+}
+    
+.result-row {
+    height: 151px;
+    padding: 30px 72px;
+    background-color: #fefefe;
+    
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.result-row:first-child {
+    border-top: 1px solid #f9f9f9;
+}
+
+.accomodation-title a {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    
+    color: #000000;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.accomodation-title a:hover {
+    color: #81b3d2;
+}
+
+.accomodation-photo {
+    float: left;
+    width: 135px;
+    margin-right: 30px;
+}
+
+.accomodation-info {
+    width: 275px;
+    min-height: 90px;
+    float: left;
+    background-color: fuchsia;
+    padding: 0;
+}
+
+.btn {
+    color: #ffffff;
+    
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    
+    text-decoration: none;
+    
+    padding: 6px 13px;
+}
+
+.btn-info {
+    background-color: #81b3d2;
+    margin-right: 6px;
+}
+
+.btn-info:hover {
+    background-color: #669ec0; 
+} 
+
+.btn-booking {
+    background-color: #766357;
+}
+
+.btn-booking:hover {
+    background-color: #604e43;
+}
+
+.info-type {
+    display: block;
+    float: left;
+    width: 108px;
+    
+    margin-right: 6px;
+}
+
+.type-price {
+    margin-bottom: 10px;
+    margin-top: 8px;
+    padding: 0;
+}
+
+.raiting-block {
+    float: right;
+    max-height: 90px;
+    background-color: fuchsia;
+}
+
+.raiting {
+    background-color: #f2f2f2;
+    
+    padding: 5px 16px;
+    margin-top: 37px;
+}
+
+/* Звезды */
+.star {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-color: firebrick;
+}
+
+/* Стили для подвала */
+
+footer {
+    background-color: beige;
+    padding: 0px 72px;
+    vertical-align: middle;
+}
+
+.hash-tag {
+    float: left;
+    background-color: aquamarine;
+    width: 240px;
+    min-height: 20px;
+    margin-right: 165px;
+    text-align: center;
+    
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+    
+    padding-top: 57px;
+    padding-bottom: 57px;
+}
+
+.footer-social {
+    float: left;
+    background-color: aquamarine;
+    width: 222px;
+    
+    margin: auto 0;
+    
+    padding: 35px 32px;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    background-color: #81b3d2;
+    
+    margin-right: 6px;
+}
+
+.social-btn:last-child {
+    margin-right: 0;
+}
+
+.footer-copyright {
+    float: right;
+    max-width: 240px;
+    padding-left: 12px;
+    background-color: aquamarine;
+}
+
+.footer-copyright p {
+    float: left;
+    margin-right: 7px;
+    
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: normal;
 }

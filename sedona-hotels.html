@@ -5,7 +5,7 @@
       <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="inner-hotels">
       <div class="container">
           <header class="main-header">
             <nav class="main-navigation">
@@ -30,8 +30,8 @@
           </header>
           <main>
               <div class="filter">
-                  <form>
-                      <div class="infrastracture">
+                  <form class="clearfix">
+                      <div class="infrastructure">
                           <h3>Инфраструктура:</h3>
                           <ul>
                               <li><label><input type="checkbox" name="infastructure[]" value="pool" checked >Бассейн</label></li>
@@ -58,12 +58,13 @@
                                 <div class="max-toggle"></div>
                               </div>
                           </div>
+                          <button type="submit" class="btn-show" >Показать</button>
                       </div>
-                      <button type="submit" class="btn-show" >Показать</button>
+                      
                   </form>
               </div>
               <div class="result">
-                  <div class="result-header">
+                  <div class="result-header clearfix">
                       <span>
                           Найдено:3                          
                       </span>
@@ -73,88 +74,94 @@
                           <li><a href="#">По типу</a></li>
                           <li><a href="#">По рейтингу</a></li>
                       </ul>
-                      <div class="sorting-direction">
-                          <a href="#" class="arrow-up">up</a>
-                          <a href="#" class="arrow-down">down</a>
+                      <div class="sorting-direction clearfix">
+                          <a href="#" class="arrow-up"></a>
+                          <a href="#" class="arrow-down"></a>
                       </div>
                   </div>
                   <div class="hotels-block">
-                      <article class="accomodation-description">
+                      <article class="accomodation-description result-row">
                           <div class="accomodation-photo">
                               <figure>
                                   <img src="img/hotel_1.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
                               </figure>
                           </div>
                           <div class="accomodation-info">
-                              <h2><a href="#">Amara Resort &#38; Spa</a></h2>
-                              <div class="info-type">Гостиница</div>
-                              <div class="info-price">От 3500 р.</div>
+                              <h2 class="accomodation-title"><a href="#">Amara Resort &#38; Spa</a></h2>
+                              <div class="type-price clearfix">
+                                <span class="info-type">Гостиница</span>
+                                <span class="info-price">От 3500 р.</span>
+                              </div>      
                               <section class="buttons">
                                   <a href="#" class="btn btn-info">Подробнее</a>
                                   <a href="#" class="btn btn-booking">Забронировать</a>
                               </section>
                           </div>
                           <div class="raiting-block">
-                              <div class="stars">
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
+                              <div class="stars-line">
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <div class="star"></div>
                               </div>
                               <div class="raiting">Рейтинг:8,5</div>
                           </div>
                       </article>
                       
-                      <article class="accomodation-description">
+                      <article class="accomodation-description result-row">
                           <div class="accomodation-photo">
                               <figure>
                                   <img src="img/hotel_2.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
                               </figure>
                           </div>
                           <div class="accomodation-info">
-                              <h2><a href="#"> Desert Quail Inn</a></h2>
-                              <div class="info-type">Мотель</div>
-                              <div class="info-price">От 2000 р.</div>
+                              <h2 class="accomodation-title"><a href="#"> Desert Quail Inn</a></h2>
+                              <div class="type-price clearfix">
+                                <span class="info-type">Мотель</span>
+                                <span class="info-price">От 2000 р.</span>
+                              </div>
                               <section class="buttons">
                                   <a href="#" class="btn btn-info">Подробнее</a>
                                   <a href="#" class="btn btn-booking">Забронировать</a>
                               </section>
                           </div>
                           <div class="raiting-block">
-                              <div class="stars">
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
+                              <div class="stars-line">
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <div class="star"></div>
                               </div>
                               <div class="raiting">Рейтинг:8,9</div>
                           </div>
                       </article>
                       
-                      <article class="accomodation-description">
+                      <article class="accomodation-description result-row clearfix">
                           <div class="accomodation-photo">
                               <figure>
                                   <img src="img/hotel_3.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
                               </figure>
                           </div>
                           <div class="accomodation-info">
-                              <h2><a href="#">Villas At Poco Diablo</a></h2>
-                              <div class="info-type">Апартаменты</div>
-                              <div class="info-price">От 4000 р.</div>
+                              <h2 class="accomodation-title"><a href="#">Villas At Poco Diablo</a></h2>
+                              <div class="type-price clearfix">
+                                <span class="info-type">Апартаменты</span>
+                                <span class="info-price">От 4000 р. </span>
+                              </div>      
                               <section class="buttons">
                                   <a href="#" class="btn btn-info">Подробнее</a>
                                   <a href="#" class="btn btn-booking">Забронировать</a>
                               </section>
                           </div>
                           <div class="raiting-block">
-                              <div class="stars">
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
+                              <div class="stars-line">
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <div class="star"></div>
                               </div>
                               <div class="raiting">Рейтинг:9,2</div>
                           </div>
