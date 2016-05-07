@@ -132,7 +132,7 @@
                     и мы покажем вам лучшие предложения гостиниц в седоне
                   </p>
                   <a href="#">Поиск гостиницы в Седоне</a> 
-                  <form action="https://echo.htmlacademy.ru" method="post" hidden>
+                  <form action="https://echo.htmlacademy.ru" method="post" class="hotel-search">
                       <div class="form-item">
                           <label for="date-arrival">Дата заезда:</label>
                           <input type="text" id="date-arrival" name="arrival" placeholder="24 апреля 2016">
@@ -143,18 +143,20 @@
                           <input type="text" id="date-check-out" name="check-out" placeholder="4 июля 2016">
                           <div class="icon-calendar"></div>
                       </div>
-                      <div class="form-item">
-                          <label for="adults-number">Взрослые:</label>
-                          <button type="button" class="minus">-</button>
-                          <input type="number" id="adults-number" name="adults" placeholder="2">
-                          <button type="button" class="plus">+</button>
-                      </div>
-                      <div class="form-item">
-                          <label for="children-number">Дети:</label>
-                          <button type="button" class="minus">-</button>
-                          <input type="number" id="children-number" name="children" placeholder="0">
-                          <button type="button" class="plus">+</button>
-                      </div>  
+                      <div class="person-count clearfix">
+                        <div class="form-item adults">
+                            <label for="adults-number">Взрослые:</label>
+                            <button type="button" class="minus">-</button>
+                            <input type="number" id="adults-number" name="adults" placeholder="2">
+                            <button type="button" class="plus">+</button>
+                        </div>
+                        <div class="form-item children">
+                            <label for="children-number">Дети:</label>
+                            <button type="button" class="minus">-</button>
+                            <input type="number" id="children-number" name="children" placeholder="0">
+                            <button type="button" class="plus">+</button>
+                        </div>  
+                      </div>      
                       <button type="submit" class="btn-search" >Найти</button>
                   </form>      
               </div>
@@ -163,15 +165,15 @@
           </div>
       </main>
       <footer class="main-footer clearfix">
-          <section class="hash-tag">
+          <section class="hash-tag col-1">
             <p>#visitsedona</p>
           </section>
-          <section class="footer-social">
+          <section class="footer-social col-1">
               <a class="social-btn social-btn-twitter" href="#">Tw</a>
               <a class="social-btn social-btn-facebook" href="#">Fb</a> 
               <a class="social-btn social-btn-youtube" href="#">Yt</a>
           </section>
-          <section class="footer-copyright clearfix">
+          <section class="footer-copyright clearfix col-1">
               <p>Website by</p>
               <a class="btn-site" href="https://htmlacademy.ru">
                   <img src="img/htmlacademy_logo.png" width="113" height="39" alt=" The Htmlacademy logotype">
