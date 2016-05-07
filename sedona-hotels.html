@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" type="text/css">
       <link rel="stylesheet" href="css/style.css">  
       <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
@@ -48,17 +49,21 @@
                           </ul>
                       </div>
                       <div class="price">
-                          <h3>Стоимость в сутки (Р): </h3>
-                          <div class="range-filter">
-                              <input type="text" name="from" placeholder="От 0">
-                              <input type="text" name="to" placeholder="До 3000">
-                              <div class="slider-filter">
-                                <div class="scale"></div>
-                                <div class="min-toggle"></div>
-                                <div class="max-toggle"></div>
+                          <div class="filter-range">
+                              <div class="filter-range-title">Стоимость в сутки (р):</div>
+                              <div class="price-controls">
+                                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                                  <label class="max-price">до<input type="text" name="min-price" value="3000"></label>
                               </div>
+                              <div class="range-controls">
+                                  <div class="scale">
+                                    <div class="bar"></div>
+                                  </div>
+                                  <div class="range-toggle range-toggle-min"></div>
+                                  <div class="range-toggle range-toggle-max"></div>
+                              </div>
+                              <button class="btn-transparent" type="submit">Показать</button>
                           </div>
-                          <button type="submit" class="btn-show" >Показать</button>
                       </div>
                       
                   </form>
