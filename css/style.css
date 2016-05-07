@@ -320,6 +320,8 @@ b.souvenirs::before {
     font-weight: bold;
     text-decoration: none;
     
+    position: relative;
+    z-index: 15;  
 }
 
 form.hotel-search {
@@ -351,10 +353,14 @@ form.hotel-search {
     position: relative;
 }
 
-.booking input {
+.booking input {    
     background-color: #f2f2f2;
     color: #000000;
     text-transform: uppercase;
+    
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
 }
 
 .booking input:hover {
@@ -372,6 +378,27 @@ form.hotel-search {
     padding: 8px 12px;
     padding-right: 9px;
     margin-left: 20px;
+    
+    position: relative;
+}
+
+::-webkit-input-placeholder {
+    color:#000000;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color:#000000;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    color:#000000;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color:#000000;
+    opacity: 1;
 }
 
 .icon-calendar {
@@ -381,7 +408,7 @@ form.hotel-search {
     background-repeat: no-repeat;
     
     position: absolute;
-    left: 410px;
+    left: 425px;
     top: 10px;
     
     z-index: 10;
@@ -393,9 +420,30 @@ form.hotel-search {
     background-image: url("../img/icon-calendar-hvr.png");
 }
 
-.person-count input, .person-count button {
-    width: 38px;
+.person-count input, 
+.person-count button {
+    background: none;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    background-color: aqua;
+    
+    width: 35px;
+    height: 35px;
+    
+    margin: 0;
+}
+
+.person-count input {
+    padding-left: 13px;
+}
+
+.count-wrapper {
+    width: 113px;
     height: 38px;
+    display: inline-block;
+    
+    background-color: #f2f2f2;    
 }
 
 .form-item.adults {
@@ -414,6 +462,38 @@ form.hotel-search {
     float: right;
 }
 
+button.minus {
+    position: relative;
+    
+}
+
+button.minus:after {
+    content: "";
+    position: absolute;
+    
+    width: 13px;
+	height: 3px;
+	background: red;
+    
+    top: 17px;
+    left: 11px;
+}
+
+button.plus {
+    position: relative;
+}
+
+button.plus:after {
+    content: "";
+    background: red;
+    height: 13px;
+    position: absolute;
+    width: 3px;
+    
+    top: 11px;
+    left: 15px;
+}
+
 .btn-search {
     background-color: #81b3d2;
     width: 100%;
@@ -426,6 +506,15 @@ form.hotel-search {
     line-height: 26px;
     font-family: "PT Sans", "Myriad Pro", sans-serif;
     font-weight: bold;
+    
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.btn-search:hover {
+    background-color: #669ec0;
 }
 
 .map {
@@ -502,6 +591,7 @@ form.hotel-search {
 .price-controls {
     height: 36px;
     margin-bottom: 20px;
+    margin-left: 10px;
     
     font-size: 0;
     
@@ -521,6 +611,7 @@ form.hotel-search {
     height: 22px;
     
     background: #ffffff;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -543,6 +634,7 @@ form.hotel-search {
 .price-controls input {
     width: 50px;
     margin: 0;
+    margin-left: 3px;
     
     color: inherit;
     font: inherit;
@@ -550,6 +642,10 @@ form.hotel-search {
     background: none;
     border: none;
     outline: none;
+}
+
+.range-controls {
+    margin-left: 10px;
 }
 
 .range-controls .bar {
@@ -612,6 +708,11 @@ form.hotel-search {
     border-radius: 2px;
     outline: none;
     cursor: pointer;
+}
+
+.btn-transparent:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .result-header {
@@ -883,6 +984,8 @@ footer {
     line-height: 26px;
     font-size: 14px;
     font-weight: normal;
+    
+    vertical-align: middle;
 }
 
 .main-footer .col-1 {

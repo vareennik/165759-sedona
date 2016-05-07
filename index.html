@@ -146,15 +146,19 @@
                       <div class="person-count clearfix">
                         <div class="form-item adults">
                             <label for="adults-number">Взрослые:</label>
-                            <button type="button" class="minus">-</button>
-                            <input type="number" id="adults-number" name="adults" placeholder="2">
-                            <button type="button" class="plus">+</button>
+                            <div class="count-wrapper">
+                                <button type="button" class="minus"></button>
+                                <input type="number" id="adults-number" name="adults" placeholder="2">
+                                <button type="button" class="plus"></button>
+                            </div>
                         </div>
                         <div class="form-item children">
                             <label for="children-number">Дети:</label>
-                            <button type="button" class="minus">-</button>
-                            <input type="number" id="children-number" name="children" placeholder="0">
-                            <button type="button" class="plus">+</button>
+                            <div class="count-wrapper">
+                                <button type="button" class="minus"></button>
+                                <input type="number" id="children-number" name="children" placeholder="0">
+                                <button type="button" class="plus"></button>
+                            </div>    
                         </div>  
                       </div>      
                       <button type="submit" class="btn-search" >Найти</button>
