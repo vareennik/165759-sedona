@@ -599,6 +599,7 @@ button.plus:after {
     border-radius: 2px;
     
     position: relative;
+    
 }
 
 .price-controls::after {
@@ -619,7 +620,7 @@ button.plus:after {
     display: inline-block;
     
     font-size: 14px;
-    line-height: 38px;
+    line-height: 32px;
     vertical-align: top;
     
     cursor: pointer;
@@ -754,6 +755,8 @@ button.plus:after {
 .current-filter a {
     color: #81b3d2;
     border: none;
+    
+    cursor: default;
 }
 
 .sorting a:not(.current-filter):hover {
