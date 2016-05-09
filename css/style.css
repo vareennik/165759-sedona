@@ -474,6 +474,9 @@ form.hotel-search-show {
     background-image: url("../img/icon-calendar-hvr.png");
 }
 
+.icon-calendar:active {
+    background-image: url("../img/icon-calendar-active.png");
+}
 
 .count-wrapper input, 
 .count-wrapper a {
