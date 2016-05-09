@@ -239,6 +239,12 @@ p.slogan {
     position: relative;
     
     padding-top: 164px;
+    
+    font-family: "PT Sans", "Myriad Pro", sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    
 }
 
 .arguments-block b::before {
@@ -405,11 +411,19 @@ form.hotel-search-show {
 .booking .input-text:hover {
     background-color: #ebebeb;
     border: 2px solid #ebebeb;
+    
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
 } 
 
 .booking .input-text:focus {
     background-color: #ffffff;
     border: 2px solid #f5f5f5;
+    
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
 }
 
 
@@ -460,30 +474,61 @@ form.hotel-search-show {
     background-image: url("../img/icon-calendar-hvr.png");
 }
 
-.person-count input, 
-.person-count button {
+
+.count-wrapper input, 
+.count-wrapper a {
+    background-color: #f2f2f2;
+    
+    width: 36px;
+    height: 36px;
+    
+    margin: 0;
+    padding: 0;
+    
+    position: absolute;
+}
+
+.person-count a {
+    display: block;
+    cursor: pointer;
+}
+
+a.minus {
+    left:0;
+    top: 0;
+}
+
+a.plus {
+    right: 0;
+    top: 0;
+}
+
+.count-wrapper input {
     background: none;
     border: none;
     outline: none;
     -webkit-appearance: none;
-    background-color: aqua;
+    background-color: #f2f2f2;
     
-    width: 35px;
-    height: 35px;
-    
-    margin: 0;
+    margin:0;
+   
+    left: 33%;
+    top: 0;
 }
 
 .person-count input {
-    padding-left: 13px;
+    padding-left: 15px;
 }
 
 .count-wrapper {
-    width: 113px;
-    height: 38px;
+    width: 108px;
+    height: 36px;
     display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
     
-    background-color: #f2f2f2;    
+    position: relative;
 }
 
 .form-item.adults {
@@ -500,38 +545,6 @@ form.hotel-search-show {
 
 .form-item.children {
     float: right;
-}
-
-button.minus {
-    position: relative;
-    
-}
-
-button.minus:after {
-    content: "";
-    position: absolute;
-    
-    width: 13px;
-	height: 3px;
-	background: red;
-    
-    top: 17px;
-    left: 11px;
-}
-
-button.plus {
-    position: relative;
-}
-
-button.plus:after {
-    content: "";
-    background: red;
-    height: 13px;
-    position: absolute;
-    width: 3px;
-    
-    top: 11px;
-    left: 15px;
 }
 
 .btn-search {
@@ -972,71 +985,96 @@ button.plus:after {
 
 /* Стили для подвала */
 
+
 footer {
-    vertical-align: middle;
+    text-align: center;
     
+    width: 1200px;
     height: 120px;
-    background-color: aqua;
+    
+    padding: 36px 72px;   
+    font-size: 0;
 }
 
 .hash-tag {
-    /*float: left;*/
-    /*width: 240px;*/
-    /*min-height: 20px;*/
-    /*margin-right: 165px;*/
+    /*
     text-align: center;
     
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     color: #000000;
-    
+    */
     /*padding-top: 57px;*/
     /*padding-bottom: 57px;*/
+    
+    vertical-align: middle;
+    display: inline-block;
+    
+    width: 30%;
+}
+
+.hash-tag p{
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 60px;
 }
 
 .footer-social {
-    background-color: antiquewhite;
+    width: 40%;
+    height: 46px;
+    
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    
 }
 
 .social-btn {
-    display: inline-block;
+    font-size:0;
+    
     vertical-align: middle;
+    display: inline-block;
     width: 46px;
     height: 46px;
     margin-right: 6px;
-    font-size: 0;
     
     background: #81b3d2 url("../img/icon_spritesheet.png") no-repeat;
-    
-}
-
-.social-btn:last-child {
-    margin-right: 0;
 }
 
 .social-btn-twitter {
-    background-position: -85px -25px;
+    background-position: -70px -10px;
+}
+
+.social-btn-facebook {
+    background-position: -7px -13px;
+}
+
+.social-btn-youtube {
+    background-position: -72px -75px;
 }
 
 .social-btn:hover {
     background-color: #669ec0;
 }
 
-.social-btn-facebook {
-    background-position: -25px -25px;
-}
-
-.social-btn-youtube {
-    background-position: -85px -90px;
+.social-btn:active {
+    
 }
 
 .footer-copyright {
-    margin-right: 0;
-    padding: 45px 0;
+    width: 30%;
+    
+    text-align: right;
+    
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .footer-copyright p {
+    display: block;
     float: left;
     margin-right: 7px;
     margin-left: 100px;
@@ -1049,18 +1087,23 @@ footer {
     vertical-align: middle;
 }
 
-.main-footer .col-1 {
-    height: 120px;
-    margin: 0;
-}
-
-.footer-copyright img {
+.btn-site {
+    display: block;
     width: 113px;
     height: 39px;
     display: block;
     margin: 0;
+    background: #ffffff url("../img/htmlacademy_logo.png") center no-repeat;
+    
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 23px;
 }
 
-.footer-copyright a {
-    
+.btn-site:hover {
+    background-image: url("../img/htmlacademy_logo_hover.png");
+}
+
+.btn-site:active {
+    background-image: url("../img/htmlacademy_logo_active.png");
 }
