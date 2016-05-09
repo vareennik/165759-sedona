@@ -118,7 +118,8 @@ h4 {
 }
 
 .main-navigation a:active {
-    color: #f2f2f2;
+    color: #000000;
+    opacity: 0.3;
 }
 
 .current-page a {
@@ -127,6 +128,11 @@ h4 {
 
 .current-page a:hover {
     color: #604e43;
+}
+
+.current-page a:active {
+    color: #766357;
+    opacity: 0.3;
 }
 
 /* Стили для основной части*/
@@ -385,27 +391,29 @@ form.hotel-search-show {
     position: relative;
 }
 
-.booking input {    
+.booking .input-text {    
     background-color: #f2f2f2;
     color: #000000;
     text-transform: uppercase;
+    border: 2px solid #f2f2f2;
     
     outline: none;
     border: none;
     -webkit-appearance: none;
 }
 
-.booking input:hover {
+.booking .input-text:hover {
     background-color: #ebebeb;
+    border: 2px solid #ebebeb;
 } 
 
-.booking input:focus {
+.booking .input-text:focus {
     background-color: #ffffff;
     border: 2px solid #f5f5f5;
 }
 
 
-.booking input[type="text"] {
+.booking .input-text {
     width: 345px;
     padding: 8px 12px;
     padding-right: 9px;
@@ -837,10 +845,20 @@ button.plus:after {
 	border-bottom: 10px solid #ccc;
 }
 
+.arrow-up:hover {
+    border-color: #000000;
+}
+
+.arrow-up:active {
+    border-color: #81b3d2;
+}
+
 .arrow-down {
     border-top: 10px solid #81b3d2;
 }
-    
+
+
+
 .result-row {
     height: 151px;
     padding: 30px 72px;
