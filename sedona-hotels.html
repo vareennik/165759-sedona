@@ -32,18 +32,37 @@
                   <form class="clearfix">
                       <div class="infrastructure">
                           <h3>Инфраструктура:</h3>
-                          <ul>
-                              <li><label><input type="checkbox" name="infastructure[]" value="pool" checked >Бассейн</label></li>
-                              <li><label><input type="checkbox" name="infastructure[]" value="parking">Парковка</label></li>
-                              <li><label><input type="checkbox" name="infastructure[]" value="wi-fi">Wi-Fi</label></li>
+                          <ul class="checkbox">
+                              <li>
+                                  <input id="check_pool" type="checkbox" name="infastructure[]" value="pool" checked/>
+                                  <label for="check_pool">Бассейн</label>
+                              </li>
+                               <li>
+                                  <input id="check_parking" type="checkbox" name="infastructure[]" value="parking" />
+                                  <label for="check_parking">Парковка</label>
+                              </li>
+                              <li>
+                                  <input id="check_wi_fi" type="checkbox" name="infastructure[]" value="wi-fi" />
+                                  <label for="check_wi_fi">Wi-Fi</label>
+                              </li>
+
                           </ul>
                       </div>
                       <div class="accomodation-type">
                           <h3>Тип жилья:</h3>
-                          <ul>
-                              <li><label><input type="checkbox" name="accomodation[]" value="hotel" checked >Гостиница</label></li>
-                              <li><label><input type="checkbox" name="accomodation[]" value="motel" checked>Мотель</label></li>
-                              <li><label><input type="checkbox" name="accomodation[]" value="apartments" checked>Апартаменты</label></li>
+                          <ul class="checkbox">
+                              <li>
+                                  <input id="check_hotel" type="checkbox" name="accomodation[]" value="hotel" checked/>
+                                  <label for="check_hotel">Гостиница</label>
+                              </li>
+                              <li>
+                                  <input id="check_motel" type="checkbox" name="accomodation[]" value="motel" checked/>
+                                  <label for="check_motel">Мотель</label>
+                              </li>
+                              <li>
+                                  <input id="check_apartments" type="checkbox" name="accomodation[]" value="apartments" checked/>
+                                  <label for="check_apartments">Апартаменты</label>
+                              </li>
                           </ul>
                       </div>
                       <div class="price">

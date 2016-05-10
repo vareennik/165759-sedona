@@ -66,6 +66,8 @@ h4 {
     margin: 0 72px;
         
     text-align: center;
+    
+    position: relative;
 }
 
 .main-navigation ul {
@@ -95,7 +97,7 @@ h4 {
 
 .nav-logo {
     top: 0;
-    left: 50%;
+    left: 635px;
     
     position: absolute;
     margin-left:-70px;
@@ -499,11 +501,31 @@ form.hotel-search-show {
 a.minus {
     left:0;
     top: 0;
+    
+    background: #f2f2f2 url("../img/plus_minus_spritesheet.png") no-repeat -12px -8px;
+}
+
+a.minus:hover {
+    background-position: -13px -61px;
+}
+
+a.minus:active {
+    background-position: -75px -8px;
 }
 
 a.plus {
     right: 0;
     top: 0;
+    
+    background: #f2f2f2 url("../img/plus_minus_spritesheet.png") no-repeat -75px -65px;
+}
+
+a.plus:hover {
+    background-position: -136px -73px;
+}
+
+a.plus:active {
+    background-position: -137px -12px;
 }
 
 .count-wrapper input {
@@ -517,11 +539,11 @@ a.plus {
    
     left: 33%;
     top: 0;
+    
+    padding-left: 13px;
 }
 
-.person-count input {
-    padding-left: 15px;
-}
+
 
 .count-wrapper {
     width: 108px;
@@ -625,6 +647,35 @@ a.plus {
     width: 288px;
     padding-left: 14px;
     min-height: 155px;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox label {
+    cursor: pointer;
+    padding-left: 0;
+}
+
+.checkbox label:before {
+    content: "";
+    
+    display: inline-block;
+    vertical-align: middle;
+    width: 26px;
+    height: 22px;
+    
+    
+    background:  url("../img/checkbox_spritesheet.png") no-repeat -25px -25px;
+    margin-right: 13px;
+    
+    margin-top: -5px;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-position: -25px -97px; 
 }
 
 .filter .price {
@@ -788,7 +839,6 @@ a.plus {
     min-height: 25px;
     margin-right: 46px;
     margin-top: 30px;
-    background-color: aquamarine;
     
     font-size: 21px;
     line-height: 26px;
@@ -828,7 +878,6 @@ a.plus {
     min-height: 13px;
     margin-right: 36px;
     margin-top: 37px;
-    background-color: darkkhaki;
     
     font-size: 12px;
     line-height: 18px;
@@ -1064,7 +1113,19 @@ footer {
 }
 
 .social-btn:active {
-    
+    background: #5496bd url("../img/icon_active_spritesheet.png") no-repeat;
+}
+
+.social-btn-twitter:active {
+    background-position: -70px -10px;
+}
+
+.social-btn-facebook:active {
+    background-position: -7px -13px;
+}
+
+.social-btn-youtube:active {
+    background-position: -72px -75px;
 }
 
 .footer-copyright {
