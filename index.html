@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">  
   <head>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" type="text/css">
       <link rel="stylesheet" href="css/normalize.css">  
       <link rel="stylesheet" href="css/style.css">  
       <meta charset="utf-8">
@@ -9,26 +9,24 @@
   </head>
   <body>
       <div class="container">
-        <header class="main-header clearfix">
+        <header class="main-header">
             <nav class="main-navigation">
-                <ul>
-                    <li>
+                <ul class="clearfix">
+                    <li class="current-page">
                         <a href="#">Информация</a>
                     </li>
                     <li>
                         <a href="#">Фото и видео</a>
                     </li>
-                    <li class="logo">
-                        <a href="#"><img src="img/logo.png" width="138" height="70" alt="Sedona logotype"></a>
-                    </li>
                     <li>
                         <a href="#">Карта штата</a>
                     </li>
                     <li>
-                        <a href="#">Гостиницы</a>
+                        <a href="sedona-hotels.html">Гостиницы</a>
                     </li>
                 </ul>
             </nav>
+            <img src="img/logo.png" width="138" height="70" alt="Sedona logotype" class="nav-logo">
         </header>
         <main>
             <div class="background-photo">
@@ -131,53 +129,73 @@
                     Укажите предполагаемые даты поездки,<br> 
                     и мы покажем вам лучшие предложения гостиниц в седоне
                   </p>
-                  <a href="#">Поиск гостиницы в Седоне</a> 
-                  <form action="https://echo.htmlacademy.ru" method="post" hidden>
+                  <a href="#" class="form-open">Поиск гостиницы в Седоне</a> 
+                  <form action="https://echo.htmlacademy.ru" method="post" class="hotel-search">
                       <div class="form-item">
                           <label for="date-arrival">Дата заезда:</label>
-                          <input type="text" id="date-arrival" name="arrival" placeholder="24 апреля 2016">
+                          <input type="text" id="date-arrival" name="arrival" placeholder="24 апреля 2016" class="input-text">
                           <div class="icon-calendar"></div>
                       </div>
                       <div class="form-item">
                           <label for="date-check-out">Дата выезда:</label>
-                          <input type="text" id="date-check-out" name="check-out" placeholder="4 июля 2016">
+                          <input type="text" id="date-check-out" name="check-out" placeholder="4 июля 2016" class="input-text">
                           <div class="icon-calendar"></div>
                       </div>
-                      <div class="form-item">
-                          <label for="adults-number">Взрослые:</label>
-                          <button type="button" class="minus">-</button>
-                          <input type="number" id="adults-number" name="adults" placeholder="2">
-                          <button type="button" class="plus">+</button>
-                      </div>
-                      <div class="form-item">
-                          <label for="children-number">Дети:</label>
-                          <button type="button" class="minus">-</button>
-                          <input type="number" id="children-number" name="children" placeholder="0">
-                          <button type="button" class="plus">+</button>
-                      </div>  
+                      <div class="person-count clearfix">
+                        <div class="form-item adults">
+                            <label for="adults-number">Взрослые:</label>
+                            <div class="count-wrapper clearfix">
+                                <a class="minus"></a>
+                                <input type="text" id="adults-number" name="adults" placeholder="2">
+                                <a class="plus"></a>
+                            </div>
+                        </div>
+                        <div class="form-item children">
+                            <label for="children-number">Дети:</label>
+                            <div class="count-wrapper">
+                                <a class="minus"></a>
+                                <input type="text" id="children-number" name="children" placeholder="0">
+                                <a class="plus"></a>
+                            </div>    
+                        </div>  
+                      </div>      
                       <button type="submit" class="btn-search" >Найти</button>
                   </form>      
               </div>
           </div>
           <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52382.982925010736!2d-111.82088817693085!3d34.85782454060462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1462715783931" width="1200" height="477" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
       </main>
       <footer class="main-footer clearfix">
-          <section class="hash-tag">
+          <section class="hash-tag ">
             <p>#visitsedona</p>
           </section>
-          <section class="footer-social">
+          <section class="footer-social ">
               <a class="social-btn social-btn-twitter" href="#">Tw</a>
               <a class="social-btn social-btn-facebook" href="#">Fb</a> 
               <a class="social-btn social-btn-youtube" href="#">Yt</a>
           </section>
           <section class="footer-copyright clearfix">
               <p>Website by</p>
-              <a class="btn-site" href="https://htmlacademy.ru">
-                  <img src="img/htmlacademy_logo.png" width="113" height="39" alt=" The Htmlacademy logotype">
-              </a>
+              <a class="btn-site" href="https://htmlacademy.ru"></a>
           </section>
       </footer>
     </div>
+    <script>
+        var link = document.querySelector(".form-open");
+        var form = document.querySelector(".hotel-search");
+        
+        link.addEventListener("click", function(event) {
+            if (!form.classList.contains("hotel-search-show")) {
+                event.preventDefault();
+                form.classList.add("hotel-search-show"); 
+            } 
+            else {
+                event.preventDefault();
+                form.classList.remove("hotel-search-show");
+            }
+        });
+    </script>
   </body>
 </html>
