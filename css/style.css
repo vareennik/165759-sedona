@@ -610,6 +610,11 @@ a.plus:active {
     background-color: #669ec0;
 }
 
+.btn-search:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+}
+
 /* Map */
 
 .map {
@@ -898,6 +903,11 @@ input[type="checkbox"]:checked + label::before {
     color: #81b3d2;
 }
 
+.sorting a:not(.current-filter):active {
+    color: #000000;
+    border-bottom: none;
+}
+
 .result-header h4 {
     display: block;
     float: left;
@@ -974,6 +984,11 @@ input[type="checkbox"]:checked + label::before {
     color: #81b3d2;
 }
 
+.accomodation-title a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
 .accomodation-photo {
     float: left;
     width: 135px;
@@ -1011,12 +1026,22 @@ input[type="checkbox"]:checked + label::before {
     background-color: #669ec0; 
 } 
 
+.btn-info:active {
+    color:#88b6d1;
+    background-color: #5496b9;
+}
+
 .btn-booking {
     background-color: #766357;
 }
 
 .btn-booking:hover {
     background-color: #604e43;
+}
+
+.btn-booking:active {
+    background-color: #503e33;
+    color: #857871;
 }
 
 .info-type {
