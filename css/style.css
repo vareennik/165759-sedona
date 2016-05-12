@@ -112,10 +112,10 @@ h4 {
     margin-top: 15px;
     margin-bottom: 15px;
     
-    -webkit-transition: 0.3s ease;
-     -moz-transition: 0.3s ease;
-     -o-transition: 0.3s ease;
-     transition: 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+     -moz-transition: color 0.3s ease;
+     -o-transition: color 0.3s ease;
+     transition: color 0.3s ease;
 }
 
 .main-navigation a:hover {
