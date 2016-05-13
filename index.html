@@ -129,7 +129,7 @@
                     Укажите предполагаемые даты поездки,<br> 
                     и мы покажем вам лучшие предложения гостиниц в седоне
                   </p>
-                  <a href="#" class="form-open">Поиск гостиницы в Седоне</a> 
+                  <a href="form.html" class="form-open">Поиск гостиницы в Седоне</a> 
                   <form action="https://echo.htmlacademy.ru" method="post" class="hotel-search">
                       <div class="form-item">
                           <label for="date-arrival">Дата заезда:</label>
@@ -182,20 +182,6 @@
           </section>
       </footer>
     </div>
-    <script>
-        var link = document.querySelector(".form-open");
-        var form = document.querySelector(".hotel-search");
-        
-        link.addEventListener("click", function(event) {
-            if (!form.classList.contains("hotel-search-show")) {
-                event.preventDefault();
-                form.classList.add("hotel-search-show"); 
-            } 
-            else {
-                event.preventDefault();
-                form.classList.remove("hotel-search-show");
-            }
-        });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,1 @@
+var link = document.querySelector(".form-open"),form = document.querySelector(".hotel-search");link.addEventListener("click", function(a){if(!form.classList.contains("hotel-search-show")){a.preventDefault();form.classList.add("hotel-search-show");}else{a.preventDefault();form.classList.remove("hotel-search-show");}});
