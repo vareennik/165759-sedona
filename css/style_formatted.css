@@ -882,9 +882,9 @@ input[type="checkbox"]:disabled + label {
 .result-header span {
     display: block;
     float: left;
-    width: 129px;
+    width: 150px;
     min-height: 25px;
-    margin-right: 35px;
+    margin-right: 16px;
     margin-top: 30px;
     
     font-size: 21px;
